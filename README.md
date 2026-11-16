@@ -1,97 +1,84 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Portal Kampus WebView (Prototyping 2 Siklus)
 
-# Getting Started
+Proyek ini menampilkan website kampus di dalam aplikasi Android menggunakan komponen WebView. Pengembangannya memakai metode **prototyping** yang dikerjakan dalam dua siklus: siklus pertama membuat prototype awal dengan MIT App Inventor, lalu siklus kedua membangun ulang aplikasinya dengan React Native. Proyek ini dibuat sebagai bagian dari tugas dan UTS mata kuliah Pemrograman Mobile.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Metode Pengembangan: Prototyping
 
-## Step 1: Start Metro
+Prototyping dipilih karena aplikasi dibuat bertahap: buat prototype, lihat hasilnya, evaluasi, lalu perbaiki di siklus berikutnya.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+| Siklus | Sesi | Tools | Tujuan |
+|--------|------|-------|--------|
+| 1 (Prototype awal) | Sesi #2 | MIT App Inventor | Membuat prototype WebView dengan cepat untuk menampilkan website kampus |
+| 2 (Pengembangan lanjutan) | Sesi #3 | React Native | Membangun ulang aplikasi dengan kode yang bisa dikelola lewat GitHub |
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Siklus 1: Prototype Awal (MIT App Inventor)
 
-```sh
-# Using npm
-npm start
+Pada siklus ini dibuat aplikasi sederhana yang membuka website kampus (UNLA) lewat WebView. Terdapat dua tombol di bagian bawah, yaitu **Refresh** untuk memuat ulang halaman dan **Home** untuk kembali ke halaman awal. Siklus ini dikerjakan secara berkelompok.
 
-# OR using Yarn
-yarn start
-```
+![Siklus 1 - Prototype App Inventor](screenshots/siklus1-app-inventor.png)
 
-## Step 2: Build and run your app
+**Unduh APK:** [Google Drive](https://drive.google.com/file/d/11hy6AcK6GtYDPkcmPFSXbNiRqeZxBhHV/view?usp=sharing)
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+**Evaluasi siklus 1:**
+- Judul aplikasi masih memakai nama bawaan "Screen1"
+- Fitur masih terbatas pada tombol Refresh dan Home
+- Aplikasi hanya dibagikan dalam bentuk APK, sehingga kodenya tidak bisa dikelola di GitHub
 
-### Android
+## Siklus 2: Pengembangan dengan React Native
 
-```sh
-# Using npm
-npm run android
+Berdasarkan evaluasi siklus 1, aplikasi dibangun ulang menggunakan React Native dengan judul **"Portal Kampus - Fabric WebView"**. Siklus ini dikerjakan secara individu.
 
-# OR using Yarn
-yarn android
-```
+![Siklus 2 - React Native](screenshots/siklus2-react-native.png)
 
-### iOS
+**Perbaikan dibanding siklus 1:**
+- Judul aplikasi sudah diganti dan lebih sesuai dengan fungsinya
+- Source code tersimpan di GitHub sehingga mudah dikelola dan dikembangkan
+- Struktur aplikasi lebih fleksibel untuk ditambah fitur baru
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+**Yang masih bisa dikembangkan:**
+- Menambahkan tombol Refresh dan Home seperti pada siklus 1
+- Menambahkan indikator loading saat halaman dimuat
+- Mengarahkan WebView ke alamat website kampus
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## Fitur Utama
 
-```sh
-bundle install
-```
+- Menampilkan halaman web di dalam aplikasi (WebView)
+- Judul aplikasi sesuai tema "Portal Kampus"
+- Pada prototype awal: tombol Refresh dan Home
 
-Then, and every time you update your native dependencies, run:
+## Teknologi yang Digunakan
 
-```sh
-bundle exec pod install
-```
+- MIT App Inventor (siklus 1)
+- React Native dengan komponen WebView (siklus 2)
+- Node.js dan npm
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Cara Menjalankan
 
-```sh
-# Using npm
-npm run ios
+**Siklus 1:** unduh APK lewat link Drive di atas, lalu install di HP Android (izinkan instalasi dari sumber tidak dikenal).
 
-# OR using Yarn
-yarn ios
-```
+**Siklus 2:**
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+1. Pastikan Node.js dan Android Studio (atau HP Android dengan USB debugging) sudah siap.
+2. Clone repositori ini:
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+   ```bash
+   git clone https://github.com/fasha09/Tugas_Web_View_Fabric.git
+   cd Tugas_Web_View_Fabric
+   ```
 
-## Step 3: Modify your app
+3. Install dependencies:
 
-Now that you have successfully run the app, let's make changes!
+   ```bash
+   npm install
+   ```
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+4. Jalankan Metro, lalu di terminal lain jalankan aplikasi:
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+   ```bash
+   npm start
+   npm run android
+   ```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## Kontak
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- GitHub: [fasha09](https://github.com/fasha09)
