@@ -15,7 +15,7 @@ Prototyping dipilih karena aplikasi dibuat bertahap: buat prototype, lihat hasil
 
 Pada siklus ini dibuat aplikasi sederhana yang membuka website kampus (UNLA) lewat WebView. Terdapat dua tombol di bagian bawah, yaitu **Refresh** untuk memuat ulang halaman dan **Home** untuk kembali ke halaman awal. Siklus ini dikerjakan secara berkelompok.
 
-![Siklus 1 - Prototype App Inventor](screenshots/siklus1-app-inventor.png)
+![Siklus 1 - Prototype App Inventor](siklus1-app-inventor.png)
 
 **Unduh APK:** [Google Drive](https://drive.google.com/file/d/11hy6AcK6GtYDPkcmPFSXbNiRqeZxBhHV/view?usp=sharing)
 
@@ -28,7 +28,7 @@ Pada siklus ini dibuat aplikasi sederhana yang membuka website kampus (UNLA) lew
 
 Berdasarkan evaluasi siklus 1, aplikasi dibangun ulang menggunakan React Native dengan judul **"Portal Kampus - Fabric WebView"**. Siklus ini dikerjakan secara individu.
 
-![Siklus 2 - React Native](screenshots/siklus2-react-native.png)
+![Siklus 2 - React Native](siklus2-react-native.png)
 
 **Perbaikan dibanding siklus 1:**
 - Judul aplikasi sudah diganti dan lebih sesuai dengan fungsinya
