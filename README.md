@@ -62,8 +62,8 @@ Berdasarkan evaluasi siklus 1, aplikasi dibangun ulang menggunakan React Native 
 2. Clone repositori ini:
 
    ```bash
-   git clone https://github.com/fasha09/Tugas_Web_View_Fabric.git
-   cd Tugas_Web_View_Fabric
+   git clone https://github.com/fasha09/webview-prototyping.git
+   cd webview-prototyping
    ```
 
 3. Install dependencies:
